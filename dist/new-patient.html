@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+<head >
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link rel="shortcut icon" type="image/png" href="./img/favicon_white.ico"/>
+  <script src="https://kit.fontawesome.com/a9198f3b7b.js" crossorigin="anonymous"></script>
+  <link rel="stylesheet" href="./css/main.css">
+  <title>AHSS | New Patient</title>
+</head>
+<body>
+  <div id="navbar-a">
+    <div id="right">
+      <h1 class="logo">
+        <span><i class="fas fa-bed fa-1x"></i></span> <span>A</span>t <span>H</span>ome <span>S</span>leep <span>S</span>tudies
+      </h1>
+    </div>
+    <div id="left">
+      <ul>
+        <li><a href="index.html">Home</a></li class="left-lis">
+        <li class="left-lis">Sleep Testing <i class="fas fa-chevron-down"></i>
+          <ul>
+            <li><a href="inlab.html">In Lab Sleep Study</a></li>
+            <li><a href="hst.html">Home Sleep Study</a></li>
+          </ul>
+        </li>
+        <li><a href="sleep-disorders.html">Sleep Disorders</a></li>
+        <li><a href="location.html">Location</a></li>
+        <li id="current" class="left-lis">Contact Us <i class="fas fa-chevron-down"></i>
+          <ul>
+            <li><a href="qc.html">Questions/Concerns</a></li>
+            <li><a href="new-patient.html">New Patient</a></li>
+          </ul>
+        </li>
+        <li><a href="insurances-accepted.html">Insurances Accepted</a></li>
+      </ul>
+    </div>
+  </div>
+
+  <div id="navbar-b">
+    <div id="right">
+      <h1 class="logo">
+        <span><i class="fas fa-bed fa-1x"></i></span> <span>A</span>t <span>H</span>ome <span>S</span>leep <span>S</span>tudies
+      </h1>
+    </div>
+    <div class="left-ham"> <!-- Menu Wrap -->
+      <input type="checkbox" class="toggler">
+      <div class="hamburger"><div></div></div>
+      <div class="menu">
+        <div>
+          <div>
+            <ul>          
+              <li><a id="current" href="index.html">Home</a></li>
+                  <li><a href="inlab.html">In Lab Sleep Study</a></li>             
+                  <li><a href="hst.html">Home Sleep Study</a></li>
+              <li><a href="sleep-disorders.html">Sleep Disorders</a></li>
+              <li><a href="location.html">Location</a></li>
+                  <li><a href="qc.html">Questions/Concerns</a></li>
+                  <li><a href="new-patient.html">New Patient</a></li>
+              <li><a href="insurances-accepted.html">Insurances Accepted</a></li>
+          
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <section id="main-container-np">
+    <section id="sub-container-np">
+      <h2>New Patient</h2>
+      <p>If you or a loved one is in need of sleep testing, we would love to help. The first step towards having testing conducted is obtaining a signed order from a physician to conduct diagnostic sleep testing. The information entered below will be used to generate a order for Diagnostic Sleep Testing, that will be sent to your doctor. By submitting the form below we may be able to expedite your care. </p>
+        <form name="new-patient" id="new" method="POST" data-netlify="true" data-netlify-recaptcha="true">
+          <div id="part1">
+            <label for="fname">(Patient) First Name: <span class="red">*</span></label>
+            <input id="fname" type="text" name="fname" placeholder="First Name" >
+            <label for="lname">(Patient) Last Name: <span class="red">*</span></label>
+            <input id="lname" type="text" name="lname" placeholder="Last Name" >
+            <label for="DOB">(Patient) DOB: <span class="red">*</span></label>
+            <input id="DOB" type="date" name="date" >
+            <label for="pphone">Telephone Phone: <span class="red">*</span></label>
+            <input id="pphone" type="text" name="pPhone" placeholder="Enter Phone Number" >
+            <label for="sphone">Alternate Phone: </label>
+            <input id="sphone" type="text" name="sPhone" placeholder="Enter Phone Number" >
+            <label for="pins">Primary Insurance: <span class="red">*</span></label>
+            <input id="pins" type="text" name="pIns" placeholder="Primary Insurance" >
+            <label for="sins">Secondary Insurance: </label>
+            <input id="sins" type="text" name="sIns" placeholder="Secondary Insurance" >
+            <label for="height">Height: <span class="red">*</span></label>
+            <input id="height" type="text" placeholder="Enter height" >
+            <label for="weight">Weight: <span class="red">*</span></label>
+            <input id="weight" type="text" placeholder="Enter weight" >
+          </div>
+          <div id="part2">
+            <ul>
+              <li><input type="radio" name="gender" value="male"> Male</li>
+              <li><input type="radio" name="gender" value="female"> Female</li>
+              <li><input type="radio" name="gender" value="other"> Other</li>
+            </ul>
+          </div>
+          <div id="part3">
+            <ul>
+              <li><input type="checkbox" name="" value=""> Atrial Fibrillation</li>
+              <li><input type="checkbox" name="" value=""> COPD</li>
+              <li><input type="checkbox" name="" value=""> Depression</li>
+              <li><input type="checkbox" name="" value=""> Excessive Daytime Sleepiness</li>
+              <li><input type="checkbox" name="" value=""> Gasping Sensations with  …..Frequent Awakenings</li>
+              <li><input type="checkbox" name="" value=""> Frequent Urination</li>
+              <li><input type="checkbox" name="" value=""> Heart Disease (CAD / CHF)</li>
+              <li><input type="checkbox" name="" value=""> History Heart Attack</li>
+              <li><input type="checkbox" name="" value=""> Hypertension</li>
+              <li><input type="checkbox" name="" value=""> Insomnia</li>
+              <li><input type="checkbox" name="" value=""> Mental or Mood Disorder</li>
+              <li><input type="checkbox" name="" value=""> Loud Snoring</li>
+              <li><input type="checkbox" name="" value=""> Morbid Obesity / Obesity</li>
+              <li><input type="checkbox" name="" value=""> Opioid Use</li>
+              <li><input type="checkbox" name="" value=""> PTSD</li>
+              <li><input type="checkbox" name="" value=""> Pulmonary Disease</li>
+              <li><input type="checkbox" name="" value=""> Shift Work Sleep disorder</li>
+              <li><input type="checkbox" name="" value=""> Stroke / TIA</li>
+              <li><input type="checkbox" name="" value=""> Witnessed Apnea</li>
+              <li><input type="checkbox" name="" value=""> Other: (Comment Below)</li>
+            </ul>
+          </div>
+          <div id="part4">
+            <label for="files"> (optional) Take picture of ID and Insurance Card(front & back) to upload : </label>
+            <input type="file" id="files" name="fileToUpload[]" multiple>
+            <label for="comments">Comments: <span class="red">*</span></label>
+            <textarea id="comments" type="text" placeholder="Enter comments here!" cols="100" rows="10"></textarea>
+            <div>
+              <div data-netlify-recaptcha="true" ></div>
+            </div>
+          </div>
+        </form>
+        <button form="new" type="submit">Submit</button>
+    </section>
+  </section>
+
+  <section id="download">
+    <h3>Copyright © 2016. At Home Sleep Studies LLC. All rights reserved.</h3>
+  </section>
+</body>
+</html>

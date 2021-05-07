@@ -1,0 +1,840 @@
+// Tablets & Smaller
+
+@media(max-width: 1249px) {
+
+#navbar-a {
+  flex-direction: column;
+  
+  h1 {
+    font-size: 2.5rem;
+  }
+  div#left {
+    ul {
+
+      & > li.left-lis:hover ul {
+        margin-top: 1rem;
+      }
+      justify-self: space-evenly;
+      justify-content: space-evenly;
+      flex-direction: row;
+      font-size: 1rem;
+      a, .left-lis {
+        color: #fff;
+        padding: 1.0rem .75rem;
+        margin: 0rem 0rem;
+
+  
+        &:hover {
+          background-color: $purple_color;
+          color: #fff !important;
+        }
+      }
+    }
+  }
+}
+
+#container-home {
+  margin-top: -7rem;
+}
+
+#feeling-container {
+  #feeling {
+    .container {
+      flex-direction: column;
+      .inner-border {
+        position: relative;
+        top: 0rem;
+        height: .3rem;
+        width: 25.5rem; 
+        margin: 2rem 0rem;
+      }
+    }
+
+  }
+}
+
+// HST 
+#main-container-hst {
+  div#part2 {
+    flex-direction: column;
+    img {
+      margin: 1rem;
+    }
+    iframe {
+      margin: 1rem;
+    }
+  }
+
+  div#part4 {
+    flex-direction: column;
+  }
+}
+
+// Location
+  #container-la {
+    height: inherit;
+    #container-lb {
+      position: relative;
+      justify-content: space-around;
+      flex-direction: column-reverse;
+      #sub-1, #sub-2 {
+        padding: 1rem;
+        img {
+          margin-bottom: 2rem;
+        }
+      }
+      .map-a {
+        display: block;
+        visibility: visible;
+        .gmap_canvas {
+          border: .5rem solid #ccc;
+        }
+      }
+      
+      .map-b {
+        display: none;
+        visibility: hidden;
+        .gmap_canvas {
+              border: .5rem solid #ccc;
+            }
+        }
+    }
+  }
+
+// New Patient 
+#main-container-np {
+
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  #sub-container-np {
+    padding: 0rem 1rem;
+    width: 100%;
+
+    p {
+      padding: 2rem 0rem ;
+    }
+    
+    form {
+
+      #part1 {
+        width: 100%;
+      }
+
+      #part3 {
+
+        column-count: 1;
+        width: 100%;
+
+        ul {
+          list-style-position: inside;
+
+          li > input {
+            height: 1.5rem;
+          }
+        }
+      }
+
+      #part4 {
+        width: 100%;
+      }
+    }
+  }
+}
+}
+///////////////////////////////////////////
+///////////////////////////////////////////
+
+@media(max-height: 500px) {
+
+  #container-home {
+    margin-top: -7rem;
+
+    #showcase {
+      .showcase-content {
+
+        h2.title {
+          display: none;
+          visibility: hidden;
+        }
+
+        p {
+          padding: 5rem 0rem;
+        }
+
+        .reviews-container {
+          visibility: hidden;
+          display: none;
+        }
+      }
+    }
+  }
+}
+///////////////////////////////////////////
+///////////////////////////////////////////
+@media(max-width: 1249px) and (max-height: 749px) {
+  #container-home {
+    margin-top: -7rem;
+
+    #showcase {
+  
+      .showcase-content {
+
+        .reviews-container {
+          visibility: hidden;
+          display: none;
+        }
+      }
+    }
+  }
+}
+///////////////////////////////////////////
+///////////////////////////////////////////
+@media(max-width: 749px) {
+  #navbar-a {
+    flex-direction: column;
+    
+    h1 {
+      font-size: 2.5rem;
+    }
+    div#left {
+      ul {
+        font-size: .5rem;
+      }
+    }
+  }
+
+  #container-home {
+    margin-top: -7rem;
+
+    #showcase {
+
+      .showcase-content {
+
+        .reviews-container {
+          visibility: hidden;
+          display: none;
+        }
+      }
+    }
+  }
+}
+
+
+@media(max-width: 575px) {
+
+  #navbar-a {
+    display: none;
+    visibility: hidden;
+  }
+  #navbar-b {
+
+    h1 {
+      padding-bottom: .5rem;
+      font-size: 1.5rem;
+      text-align: center;
+      
+      i.fa-bed {
+        display: none;
+        visibility: hidden;
+      }
+    }
+
+    display: flex;
+    visibility: visible;
+
+    flex-direction: column;
+    justify-content: center;
+
+    .left-ham {
+      position: relative;
+    }
+
+    .left-ham .toggler {
+      position: relative;
+      flex-direction: row;
+      z-index: 2;
+      cursor: pointer;
+      width: 50px;
+      height: 50px;
+      opacity: 0;
+    }
+
+    .left-ham .hamburger {
+      position: absolute;
+      top: 0;
+      left: 0;
+      z-index: 1;
+      width: 50px;
+      height: 50px;
+      padding: .75rem;
+      border-radius: 5%;
+      background: black;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+
+    // Hambuger Line 
+    .left-ham .hamburger > div {
+      position: relative;
+      flex: none;
+      width: 100%;
+      height: 2px;
+      background: #fff;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+
+    // Hamburger Top/Bottom Lines
+    .left-ham .hamburger > div::before,
+    .left-ham .hamburger > div::after {
+      content: '';
+      position: absolute;
+      z-index: 1;
+      top: -10px;
+      width: 100%;
+      height: 2px;
+      background: inherit;
+    }
+
+    // Show Menu
+
+    .left-ham .toggler:checked ~ .menu {
+      visibility: visible;
+    }
+    
+    .left-ham .toggler:checked ~ .menu > div {
+      transform: scale(1);
+      transition-duration: .75s;
+      div {
+        opacity: 1;
+      }
+    }
+
+    .left-ham .hamburger > div::after {
+      top: 10px;
+    }
+
+    .left-ham .menu {
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      visibility: hidden;
+      overflow: hidden;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+
+    .left-ham .menu > div {
+      background: #333;
+      width: 200vw;
+      height: 200vh;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      transform: scale(0);
+      transition: all 0.4s ease;
+    }
+
+    .left-ham .menu > div > div {
+      text-align: center;
+      max-width: 90vw;
+      max-height: 100vh;
+      opacity: 0;
+      transition: opacity 0.4s ease;
+    }
+
+
+    .left-ham .menu > div > div > ul > li { 
+
+      &:first-child {
+        border-top: 2px solid black;
+      }
+
+      list-style: none;
+      color: #fff;
+      font-size: 1.5rem;
+      padding: .5rem 0rem;
+      border-bottom: 2px solid black;
+    }
+    
+    .left-ham .menu > div > div > ul > li > a { 
+      color: #fff;
+    }
+  }
+  //////////////////////////////////////////
+
+
+    // All of home page 
+  #container-home {
+    margin-top: -9.5rem;
+
+    #showcase {
+      .showcase-content {
+
+        .reviews-container {
+          visibility: hidden;
+          display: none;
+        }
+        overflow: hidden;
+        flex-direction: column;
+        text-align: center;
+        justify-content: center;
+        height: 100%;
+        width: 100%;
+        color: #fff;
+        position: absolute;
+        top: 0;
+        left: 0;
+        background-color: rgba(0, 0, 0, .4);
+        font-size: 2rem;
+  
+        h2.title {
+          font-size: 3rem;
+          padding-bottom: 0rem;
+        }
+  
+        p.title {
+          font-size: 1.25rem;
+          padding-top: 2rem;
+        }
+      }
+  
+      p {
+        padding: 1rem;
+      }
+    }
+  }
+  
+  #feeling-container {
+    #feeling {
+      .container {
+        padding: 0rem;
+        flex-direction: column;
+        .inner-border {
+          top: 0rem;
+          height: .3rem;
+          width: 20rem; 
+          margin: .5rem 0rem;
+        }
+
+        .tired, .run, .exh {
+          height: 22rem;
+        }
+
+        div {
+          img {
+            width: 18rem;
+            height: 18rem;
+          }
+        }
+      }
+  
+          // Mabye It's: Section
+    #part-1 {
+      padding: 0rem .5rem;
+      color: #fff;
+      #head {
+        font-size: 3rem;
+        margin: 1rem;
+      }
+    }
+
+    }
+  }
+
+  #why-us {
+    padding: .5rem;
+    #why {
+      font-size: 3rem;
+    }
+  
+    #achc {
+      font-size: 1.75rem;
+    } 
+  
+    #achc-state {
+      font-size: 1rem;
+      padding-bottom: 3rem;
+    }
+  
+    #miss {
+      font-size: 2rem;
+      padding-bottom: 1rem;
+    }
+    #miss-state {
+      font-size: 1rem;
+    }
+  
+    #everyone {
+      font-size: 2rem;
+    }
+  }  
+  
+  #download {
+    padding: .5rem;
+    h2 {
+      text-align: center;
+    }
+    p {
+      text-align: center;
+    }
+  }
+///////////////////////////////////////////////////////
+
+// In Lab Sleep Study
+.container-inlab {
+  #sub-container-inlab {
+    width: 20rem;
+    div {
+      padding: .5rem 0rem;
+    }
+  
+    div#heading {
+      h4 {
+        font-size: 1.75rem;
+        text-align: center;
+      }
+  
+      h2 {
+        font-size: 2.25rem;
+        text-align: center;
+      }
+    }
+  
+    div#part1 {
+      img {
+        margin-bottom: 1rem;
+        width: 16rem;
+      }
+      p {
+        font-size: 1rem;
+      }
+    }
+
+    div#part2 {
+      h3 {
+        padding-bottom: 1rem;
+        font-size: 2rem;
+        text-align: center;
+      }
+      p#do {
+        font-size: 1.25rem;
+      }
+      
+      p#donot {
+        font-size: 1rem;
+      }
+    }
+
+    div#part3 {
+      h3 {
+        font-size: 2rem;
+        text-align: center;
+      }
+
+      #p-a {
+        img {
+          margin-bottom: 1rem;
+          width: 16rem;
+        }
+      }
+    
+
+      p {
+        font-size: 1rem;
+      }
+    }
+    div#part4 {
+      
+      h3 {
+        font-size: 2rem;
+        text-align: center;
+      }
+      p {
+        font-size: 1rem;
+      }
+    }
+    div#part5 {
+      h3 {
+        font-size: 2rem;
+        text-align: center;
+      }
+      p {
+        font-size: 1rem;
+      }
+    }
+  }
+}
+////////////////////////////////////////////////////
+
+// HST
+#main-container-hst {
+  #sub-container-hst {
+    width: 20rem;
+    padding: .5rem;
+  }
+
+  p {
+    font-size: 1rem;
+  }
+
+  div#part1 {
+    h3 {
+      text-align: center;
+    }
+
+    h2 {
+      font-size: 2.25rem;
+      text-align: center;
+    }
+  }
+
+  div#part2 {
+    padding-bottom: .5rem;
+    img {
+      height: 12rem;
+    }
+    iframe {
+      height: 12rem;
+      width: 18rem;
+    }
+  }
+  div#part4 {
+    img {
+      height: 15rem;
+    }
+  }
+
+  div#part5 {
+    h2 {
+      font-size: 2rem;
+    }
+
+    p {
+      font-size: 1rem;
+    }
+  }
+}
+/////////////////////////////////////
+
+// Sleep Disorder
+#container-sd-a {
+  #container-sd-b {
+    width: 20rem;
+    #grid-container {
+      padding: 0rem .5rem;
+      #headerr {
+        padding-top: 1.5rem;
+        font-size: 2rem;
+        text-align: center;
+      }
+  
+      p {
+        font-size: 1.0rem;
+      }
+      img#pic-1 {
+        width: 18rem;
+        margin: .5rem .5rem;
+      }
+      img#pic-2 {
+        width: 18rem;
+        margin: .5rem .5rem;
+      }
+    }
+  #part-0a {
+    font-size: 2rem;
+    padding: .5rem .5rem;
+    text-align: center;
+  }
+  
+  
+  #part-3 {
+    padding: .5rem .5rem;
+    h2 { 
+      font-size: 2rem;
+      text-align: center; 
+    }
+    p { 
+      padding: .5rem 0rem; 
+      font-size: 1rem;
+    }
+  }
+  #part-4 {
+    ul {
+      li {
+        padding: .5rem;
+      }
+    }
+    padding: .5rem .5rem;
+    h2 { 
+      font-size: 2rem;
+      text-align: center;
+    }
+    font-size: 1.5rem;
+    p { 
+      padding: .5rem 0rem; 
+      font-size: 1rem;
+    }
+  }
+  #part-5 {
+    padding: .5rem .5rem;
+    h2 { 
+      font-size: 2rem;
+      text-align: center;
+     }
+
+    p { 
+      padding: .5rem 0rem;
+      text-align: center;
+      font-size: 1rem;
+     }
+  }
+  
+  }
+  
+}
+  ///////////////////////////////////
+
+  // Location
+  #container-la {
+  height: 100%;
+  #container-lb {
+    padding: .5rem;
+    width: 20rem;
+    #sub-1, #sub-2 {
+      height: 100%;
+      width: 20rem;
+    }
+
+    #sub-1 {
+     
+      h2 {
+        font-size: 2.5rem;
+        padding: 0rem 0rem;
+        text-align: center;
+        padding-bottom: 1rem;
+      }
+      h3 {
+        padding-bottom: 1.5rem;
+        text-align: center;
+      }
+      p {
+        text-align: center;
+      }
+
+      .map-b {
+        align-self: center;
+        padding-top: 1rem;
+      }
+    }
+
+    #sub-2 {
+
+      img {
+        width: 18rem;
+        height: 15rem;
+      }
+      
+      p {
+        padding-bottom: 2rem;
+        &#please {
+          font-size: 1.75rem;
+        }
+      }
+    }
+    
+    .map-a {
+      display: none;
+      visibility: hidden;
+      .gmap_canvas {
+      }
+    }
+    
+    .map-b {
+      display: block;
+      visibility: visible;
+      .gmap_canvas {
+          }
+      }
+    }
+}
+/////////////////////////////////////////////
+
+// Questions / Concerns
+#main-container-qc {
+  #sub-container-qc {
+    width: 80rem;
+    #form-qc {
+      input {
+        width: 18rem;
+        font-size: 1.2rem;
+      }
+      select {
+        width: 18rem;
+        font-size: 1.2rem;
+      }
+      textarea {
+        width: 18rem;
+        font-size: 1.2rem;
+        margin-bottom: .75rem;
+      }
+    }
+  }
+}  
+/////////////////////////////////////
+
+// New Patient 
+#main-container-np {
+  #sub-container-np {
+    h2 {
+      font-size: 2rem;
+      padding-bottom: 0rem;
+    }
+  }
+}
+
+//////////////////////////////////////
+
+// Insurances Accepted
+.container-ia-a {
+  .container-ia-b {
+    width: 20rem;
+    h2 {
+      font-size: 2rem;
+    }
+  
+    .list-of-ins {
+        ul {
+          margin-left: 1.5rem;
+          column-count: 1;
+          padding: .5rem;
+          li {
+            font-size: 1rem;
+            padding: 0rem;
+          }
+        }
+    }
+  
+    h3 {
+      font-size: 2rem;
+      padding: .5rem .5rem;
+    }
+  
+    ul#no-good {
+      li {
+        font-size: 1.5rem;
+      }
+    }
+  }
+}
+
+}
+
+  
+
